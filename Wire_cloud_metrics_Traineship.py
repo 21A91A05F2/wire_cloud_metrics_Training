@@ -99,8 +99,107 @@
 
 #using Aliases (as keyword)
 
-import math as m
-print(m.sqrt(49))
+# import math as m
+# print(m.sqrt(49))
 
 
+# working with the dictoinaries:
 
+# Key-value pair:
+
+# Accessing of the key-value pair:
+
+# student = {"name":"shiva","age":23}
+# print(student["name"])
+# for v,k in student.items():
+#     print("key vlaue Pair:",v,k)
+
+# for i in student.keys():
+#     print("Key value pair:",i)
+
+# for i in student.values():
+#     print("Values:",i)
+
+
+# num = (1,2,3,4,5,5)
+# print(num)
+# # print(type(num))
+# num.add(1)
+# print(num)
+
+#file manipulation:
+
+# string methods:
+
+# s = " Om namashivaya "
+# print(s.upper())
+# print(s.lower())
+# print(s.strip())
+# print(s.replace("Om","OM"))
+
+#string concatenation and formating:
+
+# name = "Alice"
+# age = 22
+# print("My name is"+" "+ name+" " +"and I am"+" "+ str(age)+" "+"years old")
+# print(f"My name is {name} and I am {age} years old.")
+
+
+#spliting and joining strings:
+
+# s = "Python is fun"
+# w = s.split() #list of the sentence 
+# print(w)
+# # print(" ".join(w))
+# print("@".join(w))
+
+# #file handling in python:
+# f = open("example.txt","w")
+# f.write("Hello, I am sireesha.")
+# f.close()
+
+# with open("example1.txt","w") as file:
+#     file.write("Hello world!")
+
+
+# Reading of the file:
+# f = open("example.txt","r")
+# c= f.read()
+# print(c)
+# f.close()
+
+# with open("example.txt","r") as f:
+#     print(f.read())
+
+# c) writing of the file and appending:
+
+# with open("example.txt","a+") as f:
+#     f.write("Appending the new data")
+#     f.seek(0)  # for moving of the pointer to the start or the index they mentioned
+#     print(f.read())
+
+# with open("example.txt","r") as f:
+#     print(f.read())
+
+#reasing of the each line by line in the python:
+
+# with open("example.txt","r") as file:
+#     for line in file:
+#         print(line.strip(),'\n')
+
+# for accesing and printing in new line by using the "."
+# with open("example.txt","r") as f:
+#     for line in f:
+#         s = line.split('.')
+#         for i in s:
+#             i = i.strip()
+#             if i:
+#                 print(i)
+
+
+#handling Errors with Try and except:
+try:
+    with open("example2.txt","r") as f:
+        print(f.open())
+except FileNotFoundError:
+    print("Please check the file name and try again")
