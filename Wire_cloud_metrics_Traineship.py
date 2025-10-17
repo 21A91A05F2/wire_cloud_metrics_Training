@@ -198,8 +198,69 @@
 
 
 #handling Errors with Try and except:
-try:
-    with open("example2.txt","r") as f:
-        print(f.open())
-except FileNotFoundError:
-    print("Please check the file name and try again")
+# try:
+#     with open("example2.txt","r") as f:
+# #         print(f.open())
+# # except FileNotFoundError:
+# #     print("Please check the file name and try again")
+
+
+
+
+# #File Handling using the try and except:
+
+# try:
+#     n = int(input())
+#     print(n**2)
+# except ValueError:
+#     print("Invalid input")
+# except Exception as e:
+#     #here e except that will catch the object of the error and that will display the obj catch in the exception and it will display it .
+#     print(f"Unexpected error: {e}")
+
+#  input: siri
+# output:  Unexpected error: invalid literal for int() with base 10: 'siri'
+
+
+# # Python Deburger:
+
+# import pdb
+# def faulty_function(x):
+#     pdb.set_trace()
+#     return x/0
+
+# faulty_function(10)
+# #n -> Excurte next line
+# #p -> print variable in next line
+# #q -> quiting Deberging
+
+
+# Logging insted of print():
+
+# Logging provides better error tracking and debugging
+
+# import logging
+# logging.basicConfig(level=logging.ERROR, format="%(levelname)s: %(message)s")
+
+# def divide(a,b):
+#     try:
+#         return a/b
+#     except ZeroDivisionError:
+#         logging.error("Division by Zero is not allowed.")
+#         return None
+
+# print(divide(10,0))
+
+#Pandas: used for the handling and analyzing structured data(tables, CSV files and adatabases).
+#Numpy : used for the efficient numerical computations with arrays and mathematical functions.
+
+import json
+
+json_data = '{"name" : "Alice", "Age" : 25}'
+
+python_data = json.loads(json_data)
+
+# for index, value in python_data.items():
+#     print(index , value)
+
+print(*python_data.items())
